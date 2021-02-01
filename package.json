@@ -1,0 +1,43 @@
+{
+  "name": "electron-auto-updater",
+  "version": "1.0.0",
+  "description": "Electron auto updater linux",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder build --linux --publish never",
+    "deploy": "electron-builder build --linux --publish always"
+  },
+  "author": "Masood <masoodmuhammad365@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.2.1",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "electron-updater": "^4.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Masuu-2830/Electron-Auto-Updater-Linux.git"
+  },
+  "build": {
+    "appId": "com.example.ElectronAutoUpdate",
+    "linux": {
+      "target": [
+        "deb",
+        "snap",
+        "rpm"
+      ],
+      "category": "Utility"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "Masuu-2830",
+        "repo": "Electron-Auto-Updater-Linux"
+      }
+    ]
+  }
+}
