@@ -1,1 +1,0 @@
-export GH_TOKEN = "0231b0c1f7e911da9a2c046164abd131c9044ce9"
