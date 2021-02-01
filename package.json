@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build": "electron-builder build --dir --publish never",
-    "deploy": "electron-builder build --dir --publish always"
+    "build": "electron-builder build --linux --publish never",
+    "deploy": "electron-builder build --linux --publish always"
   },
   "author": "Masood <masoodmuhammad365@gmail.com>",
   "license": "ISC",
